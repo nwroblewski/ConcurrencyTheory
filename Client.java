@@ -13,6 +13,12 @@ public class Client implements Runnable{
         //System.out.println(Thread.currentThread().getName() +"Client is waiting for cart");
         shop.semaphore.Proberen();
         System.out.println(shop.semaphore.counter + "Carts left");
+        try {
+            Thread.sleep(2000);
+        }
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
         //System.out.println(Thread.currentThread().getName() + "Client took a cart and started shopping");
        // System.out.println(Thread.currentThread().getName() + "Client finished his shopping");
         shop.semaphore.Verhogen();

@@ -26,23 +26,24 @@ public class Main {
 //        System.out.println(counter.value);
 
         // SHOP WITH LIMITED SHOPPING CARTS USING MY OWN IMPLEMENTATION OF COUNTER SEMAPHORE
-        Shopify shop = new Shopify(5);
-        Client[] clients = new Client[100];
-        Thread[] threads = new Thread[100];
+        int clientsNumber = 10;
+        Shopify shop = new Shopify(4);
+        Client[] clients = new Client[clientsNumber];
+        Thread[] threads = new Thread[clientsNumber];
 
         // Creating clients
-        for(int i = 0; i < 100; i++) clients[i] = new Client(shop);
+        for(int i = 0; i < clientsNumber; i++) clients[i] = new Client(shop);
 
         // Creating clients threads
-        for(int i = 0; i < 100; i++) threads[i] = new Thread(clients[i]);
+        for(int i = 0; i < clientsNumber; i++) threads[i] = new Thread(clients[i]);
 
 
         //Starting clients threads
-        for(int i = 0; i< 100; i++) threads[i].start();
+        for(int i = 0; i< clientsNumber; i++) threads[i].start();
 
 
         //Joining threads
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < clientsNumber; i++){
             try{
                 threads[i].join();
             }
