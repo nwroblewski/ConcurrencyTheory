@@ -9,11 +9,11 @@ public class Client implements Runnable{
 
     @Override
     public void run() {
-        System.out.println("Klient wchodzi do sklepu");
-        System.out.println("Klient czeka na koszyk");
+        System.out.println(Thread.currentThread().getName() + "Klient wchodzi do sklepu");
+        System.out.println(Thread.currentThread().getName() +"Klient czeka na koszyk");
         shop.semaphore.Proberen();
-        System.out.println("Klient pobrał koszul i wykonuje zakupy");
-        System.out.println("Klient skończył zakupy");
+        System.out.println(Thread.currentThread().getName() + "Klient pobrał koszyk i wykonuje zakupy");
+        System.out.println(Thread.currentThread().getName() + "Klient skończył zakupy");
         shop.semaphore.Verhogen();
     }
 }
