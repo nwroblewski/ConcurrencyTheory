@@ -14,8 +14,6 @@ public class Consumer implements Runnable {
 //            synchronized (this.buffer) {
                 String message = buffer.take();
                 System.out.println(Thread.currentThread().getName()+" "+message);
-
-
         }
     }
 }
