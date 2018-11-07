@@ -1,4 +1,6 @@
-package Lab3;
+package Lab3.PrinterRoom;
+
+import Lab3.PrinterRoom.PrinterRoom;
 
 public class Worker implements Runnable{
     private PrinterRoom room;  //printer room monitor

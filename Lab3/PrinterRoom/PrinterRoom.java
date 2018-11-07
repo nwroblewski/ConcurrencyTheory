@@ -1,4 +1,4 @@
-package Lab3;
+package Lab3.PrinterRoom;
 
 import java.util.ArrayList;
 import java.util.List;

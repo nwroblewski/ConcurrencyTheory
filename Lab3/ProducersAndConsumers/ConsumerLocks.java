@@ -1,6 +1,6 @@
-package Lab3;
+package Lab3.ProducersAndConsumers;
 
-import Lab3.BoundedBuffer;
+import Lab3.ProducersAndConsumers.BoundedBuffer;
 
 public class ConsumerLocks implements Runnable {
 
