@@ -1,3 +1,7 @@
+package Lab2.ShopSimulation;
+
+import Lab2.ShopSimulation.Shopify;
+
 public class Client implements Runnable{
 
     public Shopify shop;

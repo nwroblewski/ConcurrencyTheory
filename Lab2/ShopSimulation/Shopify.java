@@ -1,3 +1,7 @@
+package Lab2.ShopSimulation;
+
+import Lab2.CounterWithSemaphore.CounteredSemaphore;
+
 public class Shopify {
 
     public int baskets;
