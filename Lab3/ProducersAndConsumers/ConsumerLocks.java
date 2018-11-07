@@ -1,3 +1,7 @@
+package Lab3;
+
+import Lab3.BoundedBuffer;
+
 public class ConsumerLocks implements Runnable {
 
     private int ILOSC;

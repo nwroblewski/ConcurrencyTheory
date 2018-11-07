@@ -1,4 +1,5 @@
 public class Shopify {
+
     public int baskets;
     public CounteredSemaphore semaphore;
 

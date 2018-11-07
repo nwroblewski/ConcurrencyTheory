@@ -1,3 +1,4 @@
+package Lab2.CounterWithSemaphore;
 
 public class Counter {
     public int value;

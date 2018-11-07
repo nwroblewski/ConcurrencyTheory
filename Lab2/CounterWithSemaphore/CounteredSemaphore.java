@@ -1,3 +1,5 @@
+package Lab2.CounterWithSemaphore;
+
 public class CounteredSemaphore {
     public int counter;
 

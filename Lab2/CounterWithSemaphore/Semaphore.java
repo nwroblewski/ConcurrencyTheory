@@ -1,3 +1,5 @@
+package Lab2.CounterWithSemaphore;
+
 public class Semaphore {
     public boolean taken = false;
 

@@ -1,3 +1,7 @@
+package Lab2.CounterWithSemaphore;
+
+import Lab2.CounterWithSemaphore.Counter;
+import Lab2.CounterWithSemaphore.Semaphore;
 
 public class ThreadsTest implements Runnable {
 
